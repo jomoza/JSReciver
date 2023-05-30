@@ -37,7 +37,7 @@ Overall, this script acts as a data interception and exfiltration tool, capturin
 #### Detect webpages hash:
 ```cat exfiLeaks.log | grep "/0/PCFET0NUWVBFIGh0bWw" | awk -F'/' '{print $3}' | awk '!seen[$1]++'```
 #### Web pages:
-```cat exfiLeaks.log | grep "/exfil/<hash>/" | cut -d"/" -f4- |  awk '!seen[$1]++' | awk -F'.jpg' '{print $1}' > a | cut -d"/" -f2- | tr -d '\n' | base64 -d```
+```cat exfiLeaks.log | grep "/exfil/<hash>/" | cut -d"/" -f4- |  awk '!seen[$1]++' | awk -F'.jpg' '{print $1}' | cut -d"/" -f2- | tr -d '\n' | base64 -d```
 
 #### Detect images hash
 ```cat exfiLeaks.log | grep "/0/iVBORw0KGg" | awk -F'/' '{print $3}' | awk '!seen[$1]++'```
