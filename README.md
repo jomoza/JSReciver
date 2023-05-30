@@ -1,6 +1,6 @@
-# JSReciver
+# reJSciver
 
-### JSReciver v0.0 - @j0moz4 
+### JS Reciver v0.0
 
 This JavaScript script intercepts various types of HTTP requests made by different libraries and frameworks, such as:
 
@@ -61,5 +61,5 @@ ________________________________________________________________________________
 ##### Extract content 
 ![image alt](https://i.imgur.com/QlSzAlB.png "2")
 
-
+by [@j0moz4](https://twitter.com/J0MoZ4)
 **Thnx to:** [https://github.com/hoodoer/XSS-Data-Exfil](https://github.com/hoodoer/XSS-Data-Exfil)
