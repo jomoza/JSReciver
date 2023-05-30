@@ -37,12 +37,12 @@ Overall, this script acts as a data interception and exfiltration tool, capturin
 #### Detect webpages hash:
 ```cat exfiLeaks.log | grep "/0/PCFET0NUWVBFIGh0bWw" | awk -F'/' '{print $3}' | awk '!seen[$1]++'```
 #### Web pages:
-```cat exfiLeaks.log | grep "/exfil/e69fc79a3b34aca3341400d55f57511a/" | cut -d"/" -f4- |  awk '!seen[$1]++' | awk -F'.jpg' '{print $1}' > a | cut -d"/" -f2- | tr -d '\n' | base64 -d```
+```cat exfiLeaks.log | grep "/exfil/<hash>/" | cut -d"/" -f4- |  awk '!seen[$1]++' | awk -F'.jpg' '{print $1}' > a | cut -d"/" -f2- | tr -d '\n' | base64 -d```
 
 #### Detect images hash
 ```cat exfiLeaks.log | grep "/0/iVBORw0KGg" | awk -F'/' '{print $3}' | awk '!seen[$1]++'```
 #### Images: 
-```cat exfiLeaks.log | awk -F'/exfil/44a0f3356980cad8c7ff3aa7436a1064/' '{print $2}' | cut -d"/" -f2- | awk -F'.jpg' '{print $1}' | awk '!seen[$0]++' | tr -d '\n' | base64 -d > tal.png```
+```cat exfiLeaks.log | awk -F'/exfil/<hash>/' '{print $2}' | cut -d"/" -f2- | awk -F'.jpg' '{print $1}' | awk '!seen[$0]++' | tr -d '\n' | base64 -d > tal.png```
 
 ______________________________________________________________________________________________________________________________________________
 
