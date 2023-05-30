@@ -44,6 +44,11 @@ Overall, this script acts as a data interception and exfiltration tool, capturin
 #### Images: 
 ```cat exfiLeaks.log | awk -F'/exfil/44a0f3356980cad8c7ff3aa7436a1064/' '{print $2}' | cut -d"/" -f2- | awk -F'.jpg' '{print $1}' | awk '!seen[$0]++' | tr -d '\n' | base64 -d > tal.png```
 
+![image alt](https://i.imgur.com/EbKGAvu.png "0")
+
+![image alt](https://i.imgur.com/l7lSTnP.png "1")
+
+![image alt](https://i.imgur.com/QlSzAlB.png "2")
 
 
 **Thnx to:** [https://github.com/hoodoer/XSS-Data-Exfil](https://github.com/hoodoer/XSS-Data-Exfil)
