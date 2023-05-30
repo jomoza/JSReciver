@@ -1,8 +1,8 @@
 # JSReciver
 
-JSReciver v0.0 - @j0moz4 
+### JSReciver v0.0 - @j0moz4 
 
-Edit the var "let STEALER_URI = '';" to your exfiltrationi server URI.
+```Edit the var "let STEALER_URI = '';" to your exfiltrationi server URI.```
 
 This JavaScript script intercepts various types of HTTP requests made by different libraries and frameworks, such as:
 
