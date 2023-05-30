@@ -44,10 +44,17 @@ Overall, this script acts as a data interception and exfiltration tool, capturin
 #### Images: 
 ```cat exfiLeaks.log | awk -F'/exfil/44a0f3356980cad8c7ff3aa7436a1064/' '{print $2}' | cut -d"/" -f2- | awk -F'.jpg' '{print $1}' | awk '!seen[$0]++' | tr -d '\n' | base64 -d > tal.png```
 
+______________________________________________________________________________________________________________________________________________
+
+## POC
+
+##### Start server
 ![image alt](https://i.imgur.com/EbKGAvu.png "0")
 
+##### Request recived
 ![image alt](https://i.imgur.com/l7lSTnP.png "1")
 
+##### Extract content 
 ![image alt](https://i.imgur.com/QlSzAlB.png "2")
 
 
